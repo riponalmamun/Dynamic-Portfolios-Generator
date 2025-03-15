@@ -1,0 +1,177 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b5c3d1;  /* Fallback color for when the image is not available */
+    line-height: 1.6; /* Improved readability */
+    position: relative; /* Needed to position the pseudo-element */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Add a pseudo-element for the background image with blur */
+body::before {
+    content: "";  /* Necessary for the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ewu.png') no-repeat center center fixed;
+    background-size: cover;  /* Ensure the image covers the entire background */
+    filter: blur(4px); /* Apply a blur of 5px */
+    z-index: -1; /* Put the pseudo-element behind the content */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent header */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Ensures header content is above the blurred background */
+}
+
+/* Other content styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent footer */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 1; /* Ensures footer content is above the blurred background */
+}
+
+/* Flex container for content */
+.content {
+    z-index: 1; /* Ensures content is above the blurred background */
+}
+
+
+/* Header Styles */
+header {
+    background-color: hsl(96, 18%, 30%);
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Auth Section Styles */
+.auth-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-button {
+    padding: 12px 24px;
+    margin: 20px;
+    background-color: #975d5d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.auth-button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Slight button zoom on hover */
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Input, Textarea, Button Styling */
+input, textarea, button {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+/* Input and Textarea Focus Effect */
+input:focus, textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+/* Submit Button Styles */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .auth-button {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    input, textarea, button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Strength Text Styling */
+#strength-text {
+    font-size: 14px;
+    margin-top: 5px;
+}
