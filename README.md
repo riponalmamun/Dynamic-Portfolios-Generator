@@ -1,4 +1,5 @@
 # Dynamic-Portfolios-Generator 😎
+The project involves creating a dynamic portfolio generator where users can log in, input personal details, skills, academic background, work experience, and optional project/publication information. After confirming their entries, a PDF is generated, and the data is stored in a database. The project will be saved in a Git repository.
 
 # This is our Front Page 👉
 
