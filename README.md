@@ -1,5 +1,5 @@
 # Dynamic-Portfolios-Generator 😎
-The project involves creating a dynamic portfolio generator where users can log in, input personal details, skills, academic background, work experience, and optional project/publication information. After confirming their entries, a PDF is generated, and the data is stored in a database. The project will be saved in a Git repository.
+This project will be developed using HTML, CSS, and PHP. HTML will structure the page and input forms for users to enter their portfolio data. CSS will be used for styling the page, ensuring a user-friendly and visually appealing interface. PHP will handle user login, data submission, and PDF generation, along with database interactions for storing the submitted data. The entire project will be version-controlled and saved in a Git repository for easy management and collaboration.
 
 # This is our Front Page 👉
 
